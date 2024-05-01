@@ -1,10 +1,8 @@
 "use client";
 
-
-import { Button } from "@/stories/Button";
-import { Header } from "@/stories/Header";
+import { Button } from "@/stories/button/Button";
+import { Header } from "@/stories/header/Header";
 import Image from "next/image";
-
 
 export default function Home() {
   return (
@@ -43,11 +41,10 @@ export default function Home() {
           height={37}
           priority
         />
-
       </div>
 
       <div>
-       <Button label={"Click Here"} backgroundColor={"primary"}/>
+        <Button label={"Click Here"} />
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
